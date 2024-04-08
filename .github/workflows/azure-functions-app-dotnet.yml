@@ -38,7 +38,7 @@ jobs:
     # If you want to use Azure RBAC instead of Publish Profile, then uncomment the task below
     - name: Login to Azure
       uses: azure/login@v1
-        with:
+      with:
           client-id: ${{ secrets.__clientidsecretname__ }}
           tenant-id: ${{ secrets.__tenantidsecretname__ }}
           subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
